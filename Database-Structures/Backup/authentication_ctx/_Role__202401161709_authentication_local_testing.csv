@@ -1,0 +1,4 @@
+"id","role_name","definition","created","edited"
+1,app_user,This role represents a standard user of the  app with public access.,1704986575,
+2,admin_user,This role represents a admin user of the  app with public access.,1704990243,
+4,app_shopper,This role represents a shopper user of the  app with public access.,1704990944,

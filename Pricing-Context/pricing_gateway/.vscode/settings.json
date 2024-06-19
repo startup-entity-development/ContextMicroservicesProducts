@@ -1,0 +1,9 @@
+{
+    "cSpell.words": [
+        "graphene",
+        "jsonify",
+        "sqlalchemy",
+        "UCAP"
+    ],
+    "python.analysis.autoImportCompletions": true
+}

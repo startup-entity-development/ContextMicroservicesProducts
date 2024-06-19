@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "2a762e74-447d-43da-b194-33b7a732ba4e",
+		"name": "Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18639230"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "login_auth_root",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "root@authentication",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ghp!123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/public/auth/login_auth_root",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"public",
+								"auth",
+								"login_auth_root"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "tomas",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "pass123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/public/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"public",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_database",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3RAYXV0aGVudGljYXRpb24iLCJhY2NvdW50X2lkIjpudWxsLCJleHRlcm5hbF9pZCI6bnVsbCwiaXNfcm9vdCI6dHJ1ZSwiaWF0IjoxNzA1NjY5Njg3LCJleHAiOjE3MTE3MTc2ODd9.bHsmdf05CarcAraFmhwB3oP-KVjwyV6TSklJTb69NQ8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3RAYXV0aGVudGljYXRpb24iLCJhY2NvdW50X2lkIjpudWxsLCJleHRlcm5hbF9pZCI6bnVsbCwiaXNfcm9vdCI6dHJ1ZSwiaWF0IjoxNzA1NTEzMzk5LCJleHAiOjE3MTE1NjEzOTl9.HJeRl0VMNIvywkKNF2akhj9CoKt9NqtuvdjlVE9w75g"
+							}
+						],
+						"url": {
+							"raw": "http://localhost/protected/auth/create_database",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"protected",
+								"auth",
+								"create_database"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "create_database",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3RAYXV0aGVudGljYXRpb24iLCJhY2NvdW50X2lkIjpudWxsLCJleHRlcm5hbF9pZCI6bnVsbCwiaXNfcm9vdCI6dHJ1ZSwiaWF0IjoxNzA1NjcxNDA5LCJleHAiOjE3MTE3MTk0MDl9.QlURAB1_zjrwCjUeV4ziuuDWtsjFLb1ToMJl4UBYmdM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/protected/product/create_database",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"protected",
+								"product",
+								"create_database"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

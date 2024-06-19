@@ -1,0 +1,753 @@
+[
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "scoped_session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "isExtraImport": true,
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "isExtraImport": true,
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "isExtraImport": true,
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "db_session",
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "isExtraImport": true,
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "ModelRole",
+        "importPath": "database.auth_model_sqlalchemy_14.role",
+        "description": "database.auth_model_sqlalchemy_14.role",
+        "isExtraImport": true,
+        "detail": "database.auth_model_sqlalchemy_14.role",
+        "documentation": {}
+    },
+    {
+        "label": "ModelRole",
+        "importPath": "database.auth_model_sqlalchemy_14.role",
+        "description": "database.auth_model_sqlalchemy_14.role",
+        "isExtraImport": true,
+        "detail": "database.auth_model_sqlalchemy_14.role",
+        "documentation": {}
+    },
+    {
+        "label": "ModelRole",
+        "importPath": "database.auth_model_sqlalchemy_14.role",
+        "description": "database.auth_model_sqlalchemy_14.role",
+        "isExtraImport": true,
+        "detail": "database.auth_model_sqlalchemy_14.role",
+        "documentation": {}
+    },
+    {
+        "label": "ModelLevel",
+        "importPath": "database.auth_model_sqlalchemy_14.level",
+        "description": "database.auth_model_sqlalchemy_14.level",
+        "isExtraImport": true,
+        "detail": "database.auth_model_sqlalchemy_14.level",
+        "documentation": {}
+    },
+    {
+        "label": "ModelLevel",
+        "importPath": "database.auth_model_sqlalchemy_14.level",
+        "description": "database.auth_model_sqlalchemy_14.level",
+        "isExtraImport": true,
+        "detail": "database.auth_model_sqlalchemy_14.level",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "database_exists",
+        "importPath": "sqlalchemy_utils",
+        "description": "sqlalchemy_utils",
+        "isExtraImport": true,
+        "detail": "sqlalchemy_utils",
+        "documentation": {}
+    },
+    {
+        "label": "drop_database",
+        "importPath": "sqlalchemy_utils",
+        "description": "sqlalchemy_utils",
+        "isExtraImport": true,
+        "detail": "sqlalchemy_utils",
+        "documentation": {}
+    },
+    {
+        "label": "create_database",
+        "importPath": "sqlalchemy_utils",
+        "description": "sqlalchemy_utils",
+        "isExtraImport": true,
+        "detail": "sqlalchemy_utils",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "importPath": "auth_model_sqlalchemy_14",
+        "description": "auth_model_sqlalchemy_14",
+        "isExtraImport": true,
+        "detail": "auth_model_sqlalchemy_14",
+        "documentation": {}
+    },
+    {
+        "label": "ModelAccount",
+        "importPath": "auth_model_sqlalchemy_14.account",
+        "description": "auth_model_sqlalchemy_14.account",
+        "isExtraImport": true,
+        "detail": "auth_model_sqlalchemy_14.account",
+        "documentation": {}
+    },
+    {
+        "label": "ModelAccountRoleLevel",
+        "importPath": "auth_model_sqlalchemy_14.account_role_level",
+        "description": "auth_model_sqlalchemy_14.account_role_level",
+        "isExtraImport": true,
+        "detail": "auth_model_sqlalchemy_14.account_role_level",
+        "documentation": {}
+    },
+    {
+        "label": "ModelLevel",
+        "importPath": "auth_model_sqlalchemy_14.level",
+        "description": "auth_model_sqlalchemy_14.level",
+        "isExtraImport": true,
+        "detail": "auth_model_sqlalchemy_14.level",
+        "documentation": {}
+    },
+    {
+        "label": "ModelRole",
+        "importPath": "auth_model_sqlalchemy_14.role",
+        "description": "auth_model_sqlalchemy_14.role",
+        "isExtraImport": true,
+        "detail": "auth_model_sqlalchemy_14.role",
+        "documentation": {}
+    },
+    {
+        "label": "graphene",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "graphene",
+        "description": "graphene",
+        "detail": "graphene",
+        "documentation": {}
+    },
+    {
+        "label": "ResolversAccount",
+        "importPath": "schemas.schema_account",
+        "description": "schemas.schema_account",
+        "isExtraImport": true,
+        "detail": "schemas.schema_account",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemyConnectionField",
+        "importPath": "graphene_sqlalchemy",
+        "description": "graphene_sqlalchemy",
+        "isExtraImport": true,
+        "detail": "graphene_sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "SQLAlchemyObjectType",
+        "importPath": "graphene_sqlalchemy",
+        "description": "graphene_sqlalchemy",
+        "isExtraImport": true,
+        "detail": "graphene_sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ModelAccount",
+        "importPath": "database.auth_model_sqlalchemy_14.account",
+        "description": "database.auth_model_sqlalchemy_14.account",
+        "isExtraImport": true,
+        "detail": "database.auth_model_sqlalchemy_14.account",
+        "documentation": {}
+    },
+    {
+        "label": "ModelAccountRoleLevel",
+        "importPath": "database.auth_model_sqlalchemy_14.account_role_level",
+        "description": "database.auth_model_sqlalchemy_14.account_role_level",
+        "isExtraImport": true,
+        "detail": "database.auth_model_sqlalchemy_14.account_role_level",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "GraphQLView",
+        "importPath": "graphql_server.flask",
+        "description": "graphql_server.flask",
+        "isExtraImport": true,
+        "detail": "graphql_server.flask",
+        "documentation": {}
+    },
+    {
+        "label": "schema",
+        "importPath": "schemas.schema",
+        "description": "schemas.schema",
+        "isExtraImport": true,
+        "detail": "schemas.schema",
+        "documentation": {}
+    },
+    {
+        "label": "ModelAccount",
+        "kind": 6,
+        "importPath": "database.auth_model_sqlalchemy_14.account",
+        "description": "database.auth_model_sqlalchemy_14.account",
+        "peekOfCode": "class ModelAccount(Base):\n    \"\"\"Account model.\"\"\"\n    __tablename__ = \"Account\"\n    id = Column(\"ID\", Integer, primary_key=True, doc=\"Id of the account\")\n    external_id = Column(\"ExternalID\", String(16), unique=True, doc=\"External ID of the account \")\n    external_person_id = Column(\"ExternalPersonID\",  String(64), unique=True, doc=\"External Person ID of the account One To One Relationship \")\n    user_name = Column(\"UserName\", String(16), unique=True, doc=\"Id_name of the account \")\n    password = Column(\"Password\", String(256), nullable=False, doc=\"Password of the account.\")\n    email = Column(\"Email\", String(256), nullable=False, unique=True, doc=\"Email of the account.\")\n    is_verified = Column(\"IsVerified\", Boolean, default=0, nullable=False, doc=\"True if the account is verified, example: Email verification\")",
+        "detail": "database.auth_model_sqlalchemy_14.account",
+        "documentation": {}
+    },
+    {
+        "label": "ModelAccountRoleLevel",
+        "kind": 6,
+        "importPath": "database.auth_model_sqlalchemy_14.account_role_level",
+        "description": "database.auth_model_sqlalchemy_14.account_role_level",
+        "peekOfCode": "class ModelAccountRoleLevel(Base):\n    \"\"\"Many to Many model Account_Role_Level\"\"\"\n    __tablename__ = 'Account_Role_Level'\n    id = Column(\"ID\", Integer, primary_key=True, doc=\"Id of the RoleLevel \")\n    account_id = Column('AccountID', ForeignKey('Account.ID', ondelete='CASCADE'), doc=\"Foreign ID of the Account\", primary_key=True)\n    role_id = Column('RoleID', ForeignKey('Role.ID', ondelete='CASCADE'), doc=\"Foreign ID Id of the role\", primary_key=True)\n    level_id = Column('LevelID', ForeignKey('Level.ID', ondelete='CASCADE'), doc=\"Foreign ID of the level\", primary_key=True)\n    is_active = Column(\"IsActive\", Boolean, default=0, nullable=False, doc=\"True if the account role is active, default False\")\n    created = Column(\"Created\", Integer, doc=\"Record the creation timestamp of the current entry using a base-10 timestamp\")\n    edited = Column(\"Edited\", Integer, doc=\"Record the update timestamp of the current entry using a base-10 timestamp\")",
+        "detail": "database.auth_model_sqlalchemy_14.account_role_level",
+        "documentation": {}
+    },
+    {
+        "label": "db_name",
+        "kind": 5,
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "peekOfCode": "db_name = \"authentication\"\ndb_password = \"Pass!123\"\ndb_user = \"auth_admin_postgres\"\ndb_uri = \"host.docker.internal:5433\"\npool_recycle = 1\npool_size = 1\nmax_overflow = 1\nengine = create_engine(f\"postgresql+psycopg2://{db_user}:{db_password}@{db_uri}/{db_name}\", pool_recycle=pool_recycle,\n                       echo=False, pool_size=pool_size, max_overflow=max_overflow, client_encoding=\"utf8\")\n# Engine connect",
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "db_password",
+        "kind": 5,
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "peekOfCode": "db_password = \"Pass!123\"\ndb_user = \"auth_admin_postgres\"\ndb_uri = \"host.docker.internal:5433\"\npool_recycle = 1\npool_size = 1\nmax_overflow = 1\nengine = create_engine(f\"postgresql+psycopg2://{db_user}:{db_password}@{db_uri}/{db_name}\", pool_recycle=pool_recycle,\n                       echo=False, pool_size=pool_size, max_overflow=max_overflow, client_encoding=\"utf8\")\n# Engine connect\n# Declarative base model to create models tables and classes",
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "db_user",
+        "kind": 5,
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "peekOfCode": "db_user = \"auth_admin_postgres\"\ndb_uri = \"host.docker.internal:5433\"\npool_recycle = 1\npool_size = 1\nmax_overflow = 1\nengine = create_engine(f\"postgresql+psycopg2://{db_user}:{db_password}@{db_uri}/{db_name}\", pool_recycle=pool_recycle,\n                       echo=False, pool_size=pool_size, max_overflow=max_overflow, client_encoding=\"utf8\")\n# Engine connect\n# Declarative base model to create models tables and classes\nBase = declarative_base()",
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "db_uri",
+        "kind": 5,
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "peekOfCode": "db_uri = \"host.docker.internal:5433\"\npool_recycle = 1\npool_size = 1\nmax_overflow = 1\nengine = create_engine(f\"postgresql+psycopg2://{db_user}:{db_password}@{db_uri}/{db_name}\", pool_recycle=pool_recycle,\n                       echo=False, pool_size=pool_size, max_overflow=max_overflow, client_encoding=\"utf8\")\n# Engine connect\n# Declarative base model to create models tables and classes\nBase = declarative_base()\nBase.metadata.bind = engine  # Bind engine to metadata of the base class",
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "pool_recycle",
+        "kind": 5,
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "peekOfCode": "pool_recycle = 1\npool_size = 1\nmax_overflow = 1\nengine = create_engine(f\"postgresql+psycopg2://{db_user}:{db_password}@{db_uri}/{db_name}\", pool_recycle=pool_recycle,\n                       echo=False, pool_size=pool_size, max_overflow=max_overflow, client_encoding=\"utf8\")\n# Engine connect\n# Declarative base model to create models tables and classes\nBase = declarative_base()\nBase.metadata.bind = engine  # Bind engine to metadata of the base class\n# Create models session_msg object",
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "pool_size",
+        "kind": 5,
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "peekOfCode": "pool_size = 1\nmax_overflow = 1\nengine = create_engine(f\"postgresql+psycopg2://{db_user}:{db_password}@{db_uri}/{db_name}\", pool_recycle=pool_recycle,\n                       echo=False, pool_size=pool_size, max_overflow=max_overflow, client_encoding=\"utf8\")\n# Engine connect\n# Declarative base model to create models tables and classes\nBase = declarative_base()\nBase.metadata.bind = engine  # Bind engine to metadata of the base class\n# Create models session_msg object\ndb_session = scoped_session(sessionmaker(bind=engine, expire_on_commit=False))",
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "max_overflow",
+        "kind": 5,
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "peekOfCode": "max_overflow = 1\nengine = create_engine(f\"postgresql+psycopg2://{db_user}:{db_password}@{db_uri}/{db_name}\", pool_recycle=pool_recycle,\n                       echo=False, pool_size=pool_size, max_overflow=max_overflow, client_encoding=\"utf8\")\n# Engine connect\n# Declarative base model to create models tables and classes\nBase = declarative_base()\nBase.metadata.bind = engine  # Bind engine to metadata of the base class\n# Create models session_msg object\ndb_session = scoped_session(sessionmaker(bind=engine, expire_on_commit=False))\nBase.query = db_session.query_property()  # Used by graphql to execute queries",
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "peekOfCode": "engine = create_engine(f\"postgresql+psycopg2://{db_user}:{db_password}@{db_uri}/{db_name}\", pool_recycle=pool_recycle,\n                       echo=False, pool_size=pool_size, max_overflow=max_overflow, client_encoding=\"utf8\")\n# Engine connect\n# Declarative base model to create models tables and classes\nBase = declarative_base()\nBase.metadata.bind = engine  # Bind engine to metadata of the base class\n# Create models session_msg object\ndb_session = scoped_session(sessionmaker(bind=engine, expire_on_commit=False))\nBase.query = db_session.query_property()  # Used by graphql to execute queries\n#if not database_exists(engine.url):",
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "peekOfCode": "Base = declarative_base()\nBase.metadata.bind = engine  # Bind engine to metadata of the base class\n# Create models session_msg object\ndb_session = scoped_session(sessionmaker(bind=engine, expire_on_commit=False))\nBase.query = db_session.query_property()  # Used by graphql to execute queries\n#if not database_exists(engine.url):\n#    from setup_db import create_all_models\n#    create_all_models(interactive=False)",
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "Base.metadata.bind",
+        "kind": 5,
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "peekOfCode": "Base.metadata.bind = engine  # Bind engine to metadata of the base class\n# Create models session_msg object\ndb_session = scoped_session(sessionmaker(bind=engine, expire_on_commit=False))\nBase.query = db_session.query_property()  # Used by graphql to execute queries\n#if not database_exists(engine.url):\n#    from setup_db import create_all_models\n#    create_all_models(interactive=False)",
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "db_session",
+        "kind": 5,
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "peekOfCode": "db_session = scoped_session(sessionmaker(bind=engine, expire_on_commit=False))\nBase.query = db_session.query_property()  # Used by graphql to execute queries\n#if not database_exists(engine.url):\n#    from setup_db import create_all_models\n#    create_all_models(interactive=False)",
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "Base.query",
+        "kind": 5,
+        "importPath": "database.auth_model_sqlalchemy_14.base",
+        "description": "database.auth_model_sqlalchemy_14.base",
+        "peekOfCode": "Base.query = db_session.query_property()  # Used by graphql to execute queries\n#if not database_exists(engine.url):\n#    from setup_db import create_all_models\n#    create_all_models(interactive=False)",
+        "detail": "database.auth_model_sqlalchemy_14.base",
+        "documentation": {}
+    },
+    {
+        "label": "ModelLevel",
+        "kind": 6,
+        "importPath": "database.auth_model_sqlalchemy_14.level",
+        "description": "database.auth_model_sqlalchemy_14.level",
+        "peekOfCode": "class ModelLevel(Base):\n    \"\"\"Level model.\"\"\"\n    __tablename__ = \"Level\"\n    id = Column(\"ID\", Integer, primary_key=True, doc=\"Id of the Level \")\n    level_name = Column(\"LevelName\", String(16), unique=True, doc=\"Level name\")\n    definition = Column(\"Definition\", String(512), unique=False, doc=\"Definition of the level\")\n    created = Column(\"Created\", Integer, doc=\"Record the creation timestamp of the current entry using a base-10 timestamp\")\n    edited = Column(\"Edited\", Integer, doc=\"Record the update timestamp of the current entry using a base-10 timestamp\")\n    def to_dict(self) -> Dict[str, Any]:\n        \"\"\"return  shallow copy ModelLevel to dict \"\"\"",
+        "detail": "database.auth_model_sqlalchemy_14.level",
+        "documentation": {}
+    },
+    {
+        "label": "ModelRole",
+        "kind": 6,
+        "importPath": "database.auth_model_sqlalchemy_14.role",
+        "description": "database.auth_model_sqlalchemy_14.role",
+        "peekOfCode": "class ModelRole(Base):\n    \"\"\"Role model.\"\"\"\n    __tablename__ = \"Role\"\n    id = Column(\"ID\", Integer, primary_key=True, doc=\"Id of the Role \")\n    role_name = Column(\"RoleName\", String(16), unique=True, doc=\"Role Name\")\n    definition = Column(\"Definition\", String(512), unique=False, doc=\"Definition of the Role \")\n    created = Column(\"Created\", Integer, doc=\"Record the creation timestamp of the current entry using a base-10 timestamp\")\n    edited = Column(\"Edited\", Integer, doc=\"Record the update timestamp of the current entry using a base-10 timestamp\")\n    def to_dict(self) -> Dict[str, Any]:\n        \"\"\"return  shallow copy ModelRole to dict \"\"\"",
+        "detail": "database.auth_model_sqlalchemy_14.role",
+        "documentation": {}
+    },
+    {
+        "label": "create_all_models",
+        "kind": 2,
+        "importPath": "database.setup_main",
+        "description": "database.setup_main",
+        "peekOfCode": "def create_all_models(interactive: bool = False) -> None:\n    log.info(f\"create all models called interactive = {interactive}. \")\n    if not database_exists(b.engine.url):\n        create_database(b.engine.url)\n    try:\n        log.warning(f\"Go ahead !\")\n        b.Base.metadata.create_all(b.engine)\n        log.warning(f\"all done!!!, and look good\")\n    except Exception as e:\n        if database_exists(b.engine.url):",
+        "detail": "database.setup_main",
+        "documentation": {}
+    },
+    {
+        "label": "log",
+        "kind": 5,
+        "importPath": "database.setup_main",
+        "description": "database.setup_main",
+        "peekOfCode": "log = logging.getLogger(__name__)\nlogging.basicConfig(\n    stream=sys.stdout,\n    level=logging.INFO,\n    format=\"%(asctime)s - %(name)s - %(levelname)s - %(message)s\",\n)\ndef create_all_models(interactive: bool = False) -> None:\n    log.info(f\"create all models called interactive = {interactive}. \")\n    if not database_exists(b.engine.url):\n        create_database(b.engine.url)",
+        "detail": "database.setup_main",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "kind": 6,
+        "importPath": "schemas.schema",
+        "description": "schemas.schema",
+        "peekOfCode": "class Query(graphene.ObjectType,ResolversAccount,):\n    # node = graphene.relay.Node.Field()\n    \"\"\"Queries which can be performed by this  API\"\"\"\nschema = graphene.Schema(\n    query=Query,\n)",
+        "detail": "schemas.schema",
+        "documentation": {}
+    },
+    {
+        "label": "schema",
+        "kind": 5,
+        "importPath": "schemas.schema",
+        "description": "schemas.schema",
+        "peekOfCode": "schema = graphene.Schema(\n    query=Query,\n)",
+        "detail": "schemas.schema",
+        "documentation": {}
+    },
+    {
+        "label": "AccountAttribute",
+        "kind": 6,
+        "importPath": "schemas.schema_account",
+        "description": "schemas.schema_account",
+        "peekOfCode": "class AccountAttribute:\n    user_name = graphene.String(description=\"User Name of the account max len 30.\", required=True)\n    password = graphene.String(description=\"Password of the account.\", required=True)\n    email = graphene.String(description=\"Email of the account.\", required=True)\nclass Role(SQLAlchemyObjectType):\n    class Meta:\n        model = ModelRole\n        interfaces = (graphene.relay.Node, )\nclass RoleLevel(SQLAlchemyObjectType):\n    class Meta:",
+        "detail": "schemas.schema_account",
+        "documentation": {}
+    },
+    {
+        "label": "Role",
+        "kind": 6,
+        "importPath": "schemas.schema_account",
+        "description": "schemas.schema_account",
+        "peekOfCode": "class Role(SQLAlchemyObjectType):\n    class Meta:\n        model = ModelRole\n        interfaces = (graphene.relay.Node, )\nclass RoleLevel(SQLAlchemyObjectType):\n    class Meta:\n        model = ModelAccountRoleLevel\n        interfaces = (graphene.relay.Node, )\nclass AccountExclude(SQLAlchemyObjectType):\n    \"\"\"AccountExclude node.\"\"\"",
+        "detail": "schemas.schema_account",
+        "documentation": {}
+    },
+    {
+        "label": "RoleLevel",
+        "kind": 6,
+        "importPath": "schemas.schema_account",
+        "description": "schemas.schema_account",
+        "peekOfCode": "class RoleLevel(SQLAlchemyObjectType):\n    class Meta:\n        model = ModelAccountRoleLevel\n        interfaces = (graphene.relay.Node, )\nclass AccountExclude(SQLAlchemyObjectType):\n    \"\"\"AccountExclude node.\"\"\"\n    class Meta:\n        model = ModelAccount\n        exclude_fields = (\n            \"password\",",
+        "detail": "schemas.schema_account",
+        "documentation": {}
+    },
+    {
+        "label": "AccountExclude",
+        "kind": 6,
+        "importPath": "schemas.schema_account",
+        "description": "schemas.schema_account",
+        "peekOfCode": "class AccountExclude(SQLAlchemyObjectType):\n    \"\"\"AccountExclude node.\"\"\"\n    class Meta:\n        model = ModelAccount\n        exclude_fields = (\n            \"password\",\n        )\n        interfaces = (graphene.relay.Node,)\nclass ResolversAccount:\n    # Account",
+        "detail": "schemas.schema_account",
+        "documentation": {}
+    },
+    {
+        "label": "ResolversAccount",
+        "kind": 6,
+        "importPath": "schemas.schema_account",
+        "description": "schemas.schema_account",
+        "peekOfCode": "class ResolversAccount:\n    # Account\n    account_list = SQLAlchemyConnectionField(AccountExclude)\n    account = graphene.relay.Node.Field(AccountExclude)",
+        "detail": "schemas.schema_account",
+        "documentation": {}
+    },
+    {
+        "label": "shutdown_session",
+        "kind": 2,
+        "importPath": "app_auth_gateway",
+        "description": "app_auth_gateway",
+        "peekOfCode": "def shutdown_session(exception=None):\n    db_session.remove()\n# Optional, for adding batch query support (used in Apollo-Client)\n#app.add_url_rule('/graphql/batch', view_func=GraphQLView.as_view(\n#    'graphql',\n#    schema=schema,\n#    batch=True\n#))\nif __name__ == '__main__':\n    app.run()",
+        "detail": "app_auth_gateway",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app_auth_gateway",
+        "description": "app_auth_gateway",
+        "peekOfCode": "app = Flask(__name__)\napp.add_url_rule('/graphql', view_func=GraphQLView.as_view(\n    'graphql',\n    schema=schema,\n    graphiql=True,\n))\n@app.teardown_appcontext\ndef shutdown_session(exception=None):\n    db_session.remove()\n# Optional, for adding batch query support (used in Apollo-Client)",
+        "detail": "app_auth_gateway",
+        "documentation": {}
+    }
+]

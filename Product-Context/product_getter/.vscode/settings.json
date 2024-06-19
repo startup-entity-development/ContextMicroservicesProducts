@@ -1,0 +1,13 @@
+{
+    "python.analysis.extraPaths": [
+        "./redcircle_integration",
+        "./redcircle_integration"
+    ],
+    "cSpell.words": [
+        "alnum",
+        "floz",
+        "Mealme",
+        "redcircle",
+        "sqlalchemy"
+    ]
+}

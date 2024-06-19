@@ -1,0 +1,4 @@
+"id","level_name","level_value","definition","created","edited"
+1,level_1,1,Level 1: 'Read-Only' Description: Allows querying records but does not authorize modifications in the database. Ideal for users who only need access to existing information without making changes.,1704992138,
+11,level_2,2,"Level 2: 'Read and Limited Modify' Description: Enables querying records and allows specific modifications in the database, such as controlled updates or deletions. This level is assigned to users who need broader access but still with restrictions.",1704997091,
+12,level_3,3,"Level 3: Full Access Description: Provides complete access to the database, allowing both queries and unrestricted modifications. This level is granted to users with advanced responsibilities requiring total control over the data.",1704997112,

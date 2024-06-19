@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+
+  pricing_gateway:
+    container_name: pricing_gateway
+    init: true
+    restart: unless-stopped
+    build:
+      context: pricing_gateway
+      dockerfile: Dockerfile-slim-bullseye-python312
+    entrypoint: watchmedo auto-restart --recursive --pattern="*.py" --directory="." python pywsgi.py
+    env_file: pricing_gateway/environment_variables/dev_pricing_gateway.env
+    volumes:
+      - ./pricing_gateway:/app
+    networks:
+      - main_net
+    
+  pricing_postgres:
+    container_name: pricing_postgres
+    image: postgres:14-alpine
+    ports:
+      - "6435:5432"
+    expose:
+      - "6435"
+    volumes:
+      - ~/pricing_app/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=Pass!123
+      - POSTGRES_USER=pricing_admin_postgres
+      - POSTGRES_DB=pricing
+    networks:
+      - main_net
+    

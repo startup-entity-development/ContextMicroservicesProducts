@@ -1,0 +1,104 @@
+config:
+  openapi: 3.0.0
+info:
+  title: "Care Cart"
+  description: "Care Cart rest apis"
+  version: "1.0"
+host: "localhost:5000"
+basePath: "/api"
+schemes:
+  - "http"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+schemas:
+  Shopper:
+    type: "object"
+    properties:
+      id:
+        type: "number"
+        description: "Id of the shopper"
+      name:
+        type: "string"
+        description: "Name of the shopper"
+
+  Customer:
+    type: "object"
+    properties:
+      id:
+        type: "number"
+        description: "Id of the customer"
+      name:
+        type: "string"
+        description: "Name of the customer"
+      stripe_customer_id:
+        type: "string"
+        description: "Stripe id of the customer"
+
+  Cart:
+    type: "object"
+    properties:
+      id:
+        type: "number"
+        description: "Id of the cart"
+      cart_total:
+        type: "number"
+      total:
+        type: "number"
+      delivery:
+        type: "number"
+      tax:
+        type: "number"
+      created_date:
+        type: "string"
+      deactive_date:
+        type: "string"
+
+  CartProductDetail:
+    type: "object"
+    properties:
+      id:
+        type: "number"
+      price:
+        type: "number"
+      cart_id:
+        type: "number"
+      product_added_date:
+        type: "string"
+        example: "2024-01-06T12:57:46.797986"
+      quantity:
+        type: "number"
+      cost:
+        type: "number"
+      product_id:
+        type: "number"
+  
+  Order:
+    type: "object"
+    properties:
+      id:
+        type: "number"
+      address:
+        type: "string"
+      contact_number:
+        type: "string"
+      note:
+        type: "string"
+      created_date:
+        type: "string"
+        example: "2024-01-06T12:57:46.797986"
+      product_delivery_date:
+        type: "string"
+        example: "2024-01-06T12:57:46.797986"
+      shopper_id:
+        type: "number"
+      cart_id:
+        type: "number"
+
+  Error:
+    type: "object"
+    properties:
+      error:
+        type: "string"

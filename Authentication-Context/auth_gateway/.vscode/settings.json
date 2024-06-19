@@ -1,0 +1,15 @@
+{
+    "cSpell.words": [
+        "appcontext",
+        "backref",
+        "camelcase",
+        "graphene",
+        "psycopg",
+        "sessionmaker",
+        "sqlalchemy"
+    ],
+    "python.analysis.extraPaths": [
+        "./authorization_management",
+        "./authorization_management"
+    ]
+}

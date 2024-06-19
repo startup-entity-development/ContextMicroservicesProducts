@@ -1,0 +1,18 @@
+{
+    "cSpell.words": [
+        "dpci",
+        "gevent",
+        "geventwebsocket",
+        "graphene",
+        "graphiql",
+        "maxsplit",
+        "plainto",
+        "redcircle",
+        "sqlalchemy",
+        "tcin",
+        "tsquery"
+    ],
+    "python.analysis.extraPaths": [
+        "./database"
+    ]
+}

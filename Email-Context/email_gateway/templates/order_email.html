@@ -1,0 +1,122 @@
+{% extends 'base.html' %} {% block head %}
+<title>Care Cart Purchase #{{ order.order_id }} Receipt</title>
+{% endblock %} {% block body %}
+<div>
+  <div id="maindiv">
+    <div id="Header">
+      <div id="--">
+        <p id="Title">Care Cart</p>
+        <p id="slogan">The future of healthy food access</p>
+      </div>
+      <div id="mainorder">
+        <div id="suborder">
+          <div style="width: 90%">
+            <p id="Ordernos" class="Ordernos">Order #{{ order.order_id }}</p>
+            <p id="subdetail" class="font subdetail">
+              Delivery date: {{ order.delivery_details.delivery_date }}
+            </p>
+            <p id="subdetail" class="font subdetail">
+              Delivery timeframe: {{ order.delivery_details.time_range }}
+            </p>
+            <br>
+            <p id="subdetail">Date of purchase: {{ order.created_date }}</p>
+            <p id="subdetail">Time of purchase: {{ order.created_time }}</p>
+          </div>
+          <div>
+            <img
+              src="https://res.cloudinary.com/dc1ish8g7/image/upload/v1701154775/awtafy.png"
+              alt="logo"
+              id="shopimg"
+            />
+          </div>
+        </div>
+        <div id="subdetail" class="subdetail1 fontres">
+          <p id="subdetail" class="font">Customer Information</p>
+          <p id="subdetail">{{ order.customer_details.name }}</p>
+        </div>
+
+        <div id="subdetail" class="subd">
+          <p id="subdetail" class="font">Contact Information</p>
+          <p id="subdetail">Phone: {{ order.customer_details.phone }}</p>
+          <p id="subdetail">Email: {{ order.customer_details.email }}</p>
+        </div>
+
+        <div id="subdetail">
+          <p id="subdetail" class="font">Address</p>
+          <p id="subdetail">{{ order.delivery_details.address }}</p>
+        </div>
+
+        <hr class="hrm" />
+
+        <p id="Ordernos" class="Ordernos1">Order Details</p>
+        {% for item in order.order_details %}
+        <div class="suballpro">
+          <div id="subproducts">
+            <div style="width: 45%; margin-right: 10%">
+              <img src="{{ item.image }}" alt="logo" class="subproimg" />
+            </div>
+            <div id="subdetail" class="resml">
+              <p id="subdetail" class="font">
+                {{ item.quantity }} {{ item.product_name }}
+              </p>
+              <p id="subdetail">Brand: {{ item.brand }}</p>
+              <p id="subdetail">Description: {{ item.description }}</p>
+              <p id="subdetail">Size: {{ item.size }}</p>
+              <p id="subdetail">Price: {{ "${:,.2f}".format(item.price) }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+        <hr class="hrm" />
+        <p id="Ordernos" class="Ordernos1">Summary</p>
+        <div id="product" class="protable" style="width: 100%">
+          <table style="width: 100%">
+            <tr>
+              <th class="tabhead">Products</th>
+              <th class="tabhead">Quantity</th>
+              <th class="tabhead text-align-end">Price</th>
+            </tr>
+            {% for item in order.order_details %}
+            <tr>
+              <td class="taballdata">
+                {{ item.product_name }} {{ item.brand }}
+              </td>
+              <td class="taballdata" style="padding-left: 22px">
+                {{ item.quantity }}
+              </td>
+              <td class="taballdata text-align-end">
+                {{ "${:,.2f}".format(item.price) }}
+              </td>
+            </tr>
+            {% endfor %}
+          </table>
+        </div>
+
+        <div class="taxdata" id="product">
+          <div class="font" style="width: 100%">Taxes</div>
+          <div class="min-width-fit-content">$0.00</div>
+        </div>
+
+        <div class="taxdata" id="product">
+          <div class="font" style="width: 100%">Delivery Fee</div>
+          <div class="min-width-fit-content">$0.00</div>
+        </div>
+
+        <div class="taxdata" id="product">
+          <div class="font" style="width: 100%">Total</div>
+          <div>{{ "${:,.2f}".format(order.total) }}</div>
+        </div>
+
+        {% if order.notes %}
+        <hr class="hrm" />
+        <p id="Ordernos" class="Ordernos1">Order Notes</p>
+        <div class="protable" style="width: 100%">
+          <p id="product">{{ order.notes }}</p>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

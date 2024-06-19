@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,500&display=swap");
+
+      body {
+        font-family: "Roboto";
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+      }
+
+      #Header {
+        /* background: linear-gradient(#085942 10%, #2B9348 10%, #FFFFFF 80%); */
+        background: linear-gradient(
+          to bottom,
+          #085942 0%,
+          #2b9348 10%,
+          #ffffff 80%
+        );
+        color: #ffffff;
+        width: 765px;
+        border-radius: 0 0 30px 30px;
+        /* padding: 20px; */
+      }
+
+      #Title {
+        font-size: 50px;
+        font-weight: bold;
+      }
+
+      #slogan {
+        font-style: italic;
+        font-size: 30px;
+      }
+
+      #date {
+        display: flex;
+        justify-content: end;
+      }
+
+      #cc {
+        background-color: #2b9348;
+        padding: 15px;
+        border-radius: 50px;
+        height: 20px;
+        margin-right: 20px;
+      }
+
+      h1 {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 18px;
+        margin: 1px;
+      }
+
+      #-- {
+        padding: 20px;
+        margin: 40px 50px;
+      }
+
+      #Ordernos {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      #subdetail {
+        font-size: 18px;
+      }
+
+      #product {
+        font-size: 14px;
+      }
+
+      #shopimg {
+        width: 127px;
+        height: 120px;
+      }
+
+      #maincare {
+        width: 765px;
+      }
+
+      #subproducts {
+        width: 602px;
+        min-height: 198px;
+        padding-bottom: 20px;
+        /* gap: 20%; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      #maindiv {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        /* margin-top: 20px; */
+      }
+      #mainorder {
+        background-color: white;
+        color: #000000;
+        padding: 32px 36px;
+        border-radius: 30px;
+        /* box-shadow: 0 4px 4px 0px #00000040; */
+        border: 0.1px solid #0000001c;
+      }
+      #suborder {
+        display: flex;
+        justify-content: space-between;
+      }
+      .Ordernos {
+        margin-bottom: 5px;
+      }
+      .Ordernos1 {
+        margin-bottom: 15px;
+      }
+      .font {
+        font-weight: bold;
+      }
+      .subdetail {
+        margin-bottom: 10px;
+      }
+      .subdetail1 {
+        margin-bottom: 10px;
+        margin-top: 20px;
+      }
+      .hrm {
+        margin: 40px 0;
+      }
+      .suballpro {
+        display: flex;
+        justify-content: center;
+      }
+      .subproimg {
+        width: 140px;
+        height: 140px;
+      }
+      .protable {
+        display: flex;
+        justify-content: space-between;
+      }
+      .tabhead {
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      .textcenter {
+        text-align: center;
+      }
+      .taballdata {
+        margin-bottom: 13px;
+        min-width: fit-content;
+      }
+      .taxdata {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .subd {
+        margin-bottom: 20px;
+      }
+      table {
+        width: 100%;
+      }
+
+      .min-width-fit-content {
+        min-width: fit-content;
+      }
+
+      .text-align-end {
+        text-align: end !important;
+      }
+
+      #product table th,
+      #product table td {
+        text-align: start;
+        min-width: 45%;
+        max-width: 45%;
+      }
+
+      @media (max-width: 700px) {
+        #Title {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        #slogan {
+          font-size: 12px;
+        }
+
+        #--- {
+          margin: 27px 24px;
+        }
+
+        #Ordernos {
+          font-size: 14px;
+        }
+
+        #subdetail {
+          font-size: 12px;
+        }
+
+        #product {
+          font-size: 10px;
+        }
+
+        #hide {
+          display: none;
+        }
+
+        #date {
+          display: none;
+        }
+
+        #noreplay {
+          display: none;
+        }
+
+        #shopimg {
+          width: 71px;
+          height: 66px;
+        }
+
+        #Header {
+          width: 347px;
+        }
+
+        #subproducts {
+          width: 270px;
+          min-height: 134px;
+          height: auto;
+          margin-left: 0;
+          gap: 8%;
+          margin-bottom: 20px;
+        }
+        .resml {
+          margin-left: 20px;
+        }
+      }
+    </style>
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    {% block body %}{% endblock %}
+  </body>
+</html>

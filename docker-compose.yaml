@@ -1,0 +1,179 @@
+version: '3.8'
+
+services:
+
+  nginx:
+    build: ./General-Context/nginx
+    restart: always
+    volumes:
+      - ./General-Context/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    container_name: nginx
+    ports:
+      - 80:80
+      - 8881:80
+    expose:
+      - "80"
+      - "8881"
+    environment:
+      NGINX_PORT: 80
+    networks:
+      - main_net
+    depends_on:
+      - product_gateway
+      - auth_gateway
+      - pricing_gateway
+      - pricing_postgres
+  
+  pricing_gateway:
+    extends:
+        file: Pricing-Context/docker-compose-deploy.yml
+        service: pricing_gateway
+  pricing_postgres:
+    extends:
+        file: Pricing-Context/docker-compose-deploy.yml
+        service: pricing_postgres
+
+  auth_gateway:
+    container_name: auth_gateway
+    init: true
+    restart: unless-stopped
+    build: 
+      context: ./Authentication-Context/auth_gateway
+      dockerfile: Dockerfile-slim-bullseye-python312
+    entrypoint: watchmedo auto-restart --recursive --pattern="*.py" --directory="." python pywsgi.py
+    env_file: ./Authentication-Context/auth_gateway/environment_variables/local_dev_auth_gateway.env
+    volumes:
+      - ./Authentication-Context/auth_gateway:/app
+    networks:
+      - main_net
+    depends_on:
+      - auth_postgres
+
+  product_gateway:
+    container_name: product_gateway      
+    init: true
+    restart: unless-stopped
+    build: 
+      context: ./Product-Context/product_gateway
+      dockerfile: Dockerfile-slim-bullseye-python312
+    entrypoint: watchmedo auto-restart --recursive --pattern="*.py" --directory="." python pywsgi.py
+    env_file: ./Product-Context/product_gateway/environment_variables/local_dev_product_gateway.env
+    volumes:
+      - ./Product-Context/product_gateway:/app
+    networks:
+      - main_net
+    depends_on:
+      - product_postgres
+
+  order_gateway:
+    container_name: order_gateway      
+    init: true
+    restart: unless-stopped
+    build: 
+      context: ./Orders-Context/order_gateway
+      dockerfile: Dockerfile-slim-bullseye-python312
+    entrypoint: watchmedo auto-restart --recursive --pattern="*.py" --directory="." python pywsgi.py
+    env_file: ./Orders-Context/order_gateway/environment_variables/local_dev_order_gateway.env
+    volumes:
+      - ./Orders-Context/order_gateway:/app
+    networks:
+      - main_net
+    depends_on:
+      - order_postgres
+  
+  email_gateway:
+    container_name: email_gateway
+    init: true
+    restart: unless-stopped
+    build:
+      context: ./Email-Context/email_gateway
+      dockerfile: Dockerfile-slim-bullseye-python311
+    entrypoint: watchmedo auto-restart --recursive --pattern="*.py" --directory="." python pywsgi.py
+    env_file: ./Email-Context/email_gateway/.env
+    volumes:
+      - ./Email-Context/email_gateway:/app
+    networks:
+      - main_net
+
+  product_getter:
+    container_name: product_getter      
+    init: true
+    restart: unless-stopped
+    build: 
+      context: ./Product-Context/product_getter
+      dockerfile: Dockerfile-slim-bullseye-python312
+    command: tail -F anything
+    env_file: ./Product-Context/product_getter/environment_variables/local_dev_product_getter.env
+    volumes:
+      - ./Product-Context/product_getter:/app
+    networks:
+      - main_net
+
+  product_postgres:
+    container_name: product_postgres
+    image: postgres:14-alpine
+    ports:
+      - "6433:5432"
+    expose:
+      - "6433"
+    volumes:
+      - ~/product_app/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=Pass!123
+      - POSTGRES_USER=product_admin_postgres
+      - POSTGRES_DB=product
+    networks:
+      - main_net
+  
+  order_postgres:
+    container_name: order_postgres
+    image: postgres:14-alpine
+    ports:
+      - "6434:5432"
+    expose:
+      - "6434"
+    volumes:
+      - ~/order_app/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=Pass!123
+      - POSTGRES_USER=order_admin_postgres
+      - POSTGRES_DB=order
+    networks:
+      - main_net
+
+  auth_postgres:
+    container_name: auth_postgres
+    image: postgres:14-alpine
+    ports:
+      - "5433:5432"
+    expose:
+      - "5433"
+    volumes:
+      - ~/auth_app/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=Pass!123
+      - POSTGRES_USER=auth_admin_postgres
+      - POSTGRES_DB=authentication
+    networks:
+      - main_net
+
+  sqlalchemy_db_setup_test:
+    container_name: sqlalchemy_db_setup_test
+    init: true
+    restart: unless-stopped
+    build: 
+      context: ./Database-Structures
+      dockerfile: Dockerfile-slim-bullseye-python312
+    command: tail -F anything      
+    env_file: ./Database-Structures/environment_variables/local.env
+    volumes:
+      - ./Database-Structures:/app
+    networks:
+      - main_net
+      
+
+ 
+networks:
+  main_net:
+    name: main_net
+    driver: bridge

@@ -1,0 +1,6 @@
+[submodule "product_gateway/product_ctx_database_sqlalchemy_14"]
+	path = product_gateway/product_ctx_database_sqlalchemy_14
+	url = https://github.com/gilson-software/product_ctx_database_sqlalchemy_14.git
+[submodule "product_getter/product_ctx_database_sqlalchemy_14"]
+	path = product_getter/product_ctx_database_sqlalchemy_14
+	url = https://github.com/gilson-software/product_ctx_database_sqlalchemy_14.git

@@ -1,0 +1,9 @@
+FROM python:3.12.0-slim-bullseye
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y git
+COPY requirements.txt requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install watchdog
+EXPOSE 3052

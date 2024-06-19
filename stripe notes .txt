@@ -1,0 +1,21 @@
+
+I have been reading the documentation of the platform we currently use (Stripe). In order to address the inconvenience for the user of not providing the option to remember their credit card details.
+
+https://stripe.com/docs/api/payment_intents
+
+This text is extracted from stripe docs, which explains the importance of including agreements in the terms.
+
+https://stripe.com/docs/payments/save-during-payment
+
+Compliance
+
+You’re responsible for your compliance with all applicable laws, regulations, and network rules when saving a customer’s payment details. For instance, if you want to save their payment method for future use, such as charging them when they’re not actively using your website or app. Add terms to your website or app that state how you plan to save payment method details and allow customers to opt in. If you want to charge them when they’re offline, make sure your terms include the following:
+
+	The customer’s agreement to your initiating a payment or a series of payments on their behalf for specified transactions.
+	The anticipated timing and frequency of payments (for example, if the charges are for scheduled instalments, subscription payments, or unscheduled top	-ups).
+	How do you determine the payment amount
+	Your cancellation policy, if the payment method is for a subscription service.
+
+Make sure you keep a record of your customer’s written agreement to these terms.
+
+Will required a deep lecture but now I have a concert in some technical information, first is necessary create a customer.this return a id of customer. 

@@ -1,0 +1,50 @@
+version: "3.8"
+
+services:
+  
+  product_gateway:
+    container_name: product_gateway
+    init: true
+    restart: unless-stopped
+    build:
+      context: product_gateway
+      dockerfile: Dockerfile-slim-bullseye-python312
+    command: tail -F anything
+    env_file: product_gateway/environment_variables/local_dev_product_gateway.env
+    volumes:
+      - product_gateway:/app
+    networks:
+      - main_net
+    depends_on:
+      - product_postgres
+      
+  product_postgres:
+    container_name: product_postgres
+    image: postgres:14-alpine
+    ports:
+      - "6433:5432"
+    expose:
+      - "6433"
+    volumes:
+      - ~/product_app/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=Pass!123
+      - POSTGRES_USER=product_admin_postgres
+      - POSTGRES_DB=product
+    networks:
+      - main_net
+    
+    
+  product_getter:
+    container_name: product_getter
+    init: true
+    restart: unless-stopped
+    build:
+      context: product_getter
+      dockerfile: Dockerfile-slim-bullseye-python312
+    command: tail -F anything
+    env_file: product_getter/environment_variables/local_dev_product_getter.env
+    volumes:
+      - product_getter:/app
+    networks:
+      - main_net
