@@ -1,6 +1,6 @@
 version: "3.8"
-
-services:  
+services:
+  
   nginx:
     build: ./General-Context/nginx
     restart: always
@@ -18,22 +18,21 @@ services:
     networks:
       - main_net
     depends_on:
-      #- product_gateway
-      #- order_gateway
+      - product_gateway
+      - order_gateway
       - auth_gateway
-      #- email_gateway
-      #- pricing_gateway
-      #- pricing_postgres
-  
-  # pricing_gateway:
-  #   extends:
-  #       file: Pricing-Context/docker-compose.yml
-  #       service: pricing_gateway
-  # pricing_postgres:
-  #   extends:
-  #       file: Pricing-Context/docker-compose.yml
-  #       service: pricing_postgres
+      - email_gateway
+      - pricing_gateway
+      - pricing_postgres
 
+  pricing_gateway:
+     extends:
+         file: Pricing-Context/docker-compose.yml
+         service: pricing_gateway
+  pricing_postgres:
+     extends:
+         file: Pricing-Context/docker-compose.yml
+         service: pricing_postgres
 
   auth_gateway:
     container_name: auth_gateway
@@ -51,37 +50,37 @@ services:
     depends_on:
        - auth_postgres
 
-  # product_gateway:
-  #   container_name: product_gateway
-  #   init: true
-  #   restart: unless-stopped
-  #   build:
-  #     context: ./Product-Context/product_gateway
-  #     dockerfile: Dockerfile-slim-bullseye-python312
-  #   command: tail -F anything
-  #   env_file: ./Product-Context/product_gateway/environment_variables/local_dev_product_gateway.env
-  #   volumes:
-  #     - ./Product-Context/product_gateway:/app
-  #   networks:
-  #     - main_net
-  #   depends_on:
-  #     - product_postgres
+  product_gateway:
+    container_name: product_gateway
+    init: true
+    restart: unless-stopped
+    build:
+      context: ./Product-Context/product_gateway
+      dockerfile: Dockerfile-slim-bullseye-python312
+    command: tail -F anything
+    env_file: ./Product-Context/product_gateway/environment_variables/local_dev_product_gateway.env
+    volumes:
+      - ./Product-Context/product_gateway:/app
+    networks:
+      - main_net
+    depends_on:
+      - product_postgres
 
-  # order_gateway:
-  #   container_name: order_gateway
-  #   init: true
-  #   restart: unless-stopped
-  #   build:
-  #     context: ./Orders-Context/order_gateway
-  #     dockerfile: Dockerfile-slim-bullseye-python312
-  #   command: tail -F anything
-  #   env_file: ./Orders-Context/order_gateway/environment_variables/local_dev_order_gateway.env
-  #   volumes:
-  #     - ./Orders-Context/order_gateway:/app
-  #   networks:
-  #     - main_net
-  #   depends_on:
-  #     - order_postgres
+  order_gateway:
+    container_name: order_gateway
+    init: true
+    restart: unless-stopped
+    build:
+      context: ./Orders-Context/order_gateway
+      dockerfile: Dockerfile-slim-bullseye-python312
+    command: tail -F anything
+    env_file: ./Orders-Context/order_gateway/environment_variables/local_dev_order_gateway.env
+    volumes:
+       - ./Orders-Context/order_gateway:/app
+    networks:
+       - main_net
+    depends_on:
+       - order_postgres
 
   email_gateway:
     container_name: email_gateway
@@ -97,68 +96,67 @@ services:
     networks:
       - main_net
 
-    # product_getter:
-    #   container_name: product_getter
-    #   init: true
-    #   restart: unless-stopped
-    #   build:
-    #     context: ./Product-Context/product_getter
-    #     dockerfile: Dockerfile-slim-bullseye-python312
-    #   command: tail -F anything
-    #   env_file: ./Product-Context/product_getter/environment_variables/local_dev_product_getter.env
-    #   volumes:
-    #     - ./Product-Context/product_getter:/app
-    #   networks:
-    #     - main_net
+  #product_getter:
+  #  container_name: product_getter
+  #  init: true
+  #  restart: unless-stopped
+  #  build:
+  #    context: ./Product-Context/product_getter
+  #    dockerfile: Dockerfile-slim-bullseye-python312
+  #    command: tail -F anything
+  #    env_file: ./Product-Context/product_getter/environment_variables/local_dev_product_getter.env
+  #  volumes:
+  #   - ./Product-Context/product_getter:/app
+  #  networks:
+  #    - main_net
 
   auth_postgres:
-     container_name: auth_postgres
-     image: postgres:14-alpine
-     ports:
+    container_name: auth_postgres
+    image: postgres:14-alpine
+    ports:
        - "5433:5432"
-     expose:
+    expose:
        - "5433"
-     volumes:
+    volumes:
        - ~/auth_app/postgres:/var/lib/postgresql/data
-     environment:
+    environment:
        - POSTGRES_PASSWORD=Pass!123
        - POSTGRES_USER=auth_admin_postgres
        - POSTGRES_DB=authentication
-     networks:
+    networks:
        - main_net
 
-  # product_postgres:
-  #   container_name: product_postgres
-  #   image: postgres:14-alpine
-  #   ports:
-  #     - "6433:5432"
-  #   expose:
-  #     - "6433"
-  #   volumes:
-  #     - ~/product_app/postgres:/var/lib/postgresql/data
-  #   environment:
-  #     - POSTGRES_PASSWORD=Pass!123
-  #     - POSTGRES_USER=product_admin_postgres
-  #     - POSTGRES_DB=product
-  #   networks:
-  #     - main_net
-
-
-  # order_postgres:
-  #   container_name: order_postgres
-  #   image: postgres:14-alpine
-  #   ports:
-  #     - "6434:5432"
-  #   expose:
-  #     - "6434"
-  #   volumes:
-  #     - ~/order_app/postgres:/var/lib/postgresql/data
-  #   environment:
-  #     - POSTGRES_PASSWORD=Pass!123
-  #     - POSTGRES_USER=order_admin_postgres
-  #     - POSTGRES_DB=order
-  #   networks:
-  #     - main_net
+  product_postgres:
+     container_name: product_postgres
+     image: postgres:14-alpine
+     ports:
+       - "6433:5432"
+     expose:
+       - "6433"
+     volumes:
+       - ~/product_app/postgres:/var/lib/postgresql/data
+     environment:
+       - POSTGRES_PASSWORD=Pass!123
+       - POSTGRES_USER=product_admin_postgres
+       - POSTGRES_DB=product
+     networks:
+       - main_net
+       
+  order_postgres:
+     container_name: order_postgres
+     image: postgres:14-alpine
+     ports:
+       - "6434:5432"
+     expose:
+       - "6434"
+     volumes:
+       - ~/order_app/postgres:/var/lib/postgresql/data
+     environment:
+       - POSTGRES_PASSWORD=Pass!123
+       - POSTGRES_USER=order_admin_postgres
+       - POSTGRES_DB=order
+     networks:
+       - main_net
 
   # new_product_postgres:
   #   container_name: new_product_postgres
@@ -175,7 +173,7 @@ services:
   #     - POSTGRES_DB=new_product
   #   networks:
   #     - main_net
-      
+
   # sqlalchemy_db_setup_test:
   #   container_name: sqlalchemy_db_setup_test
   #   init: true

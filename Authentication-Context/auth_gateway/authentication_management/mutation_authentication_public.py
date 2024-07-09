@@ -31,7 +31,7 @@ class LoginAccount(graphene.Mutation):
                                                                                     password=password)       
             if not account:
                 raise Exception("$|LA1001 User name or password incorrect'")
-            
+    
         if account.is_soft_deleted:
             raise Exception("|LA1002 Account is deleted")
             

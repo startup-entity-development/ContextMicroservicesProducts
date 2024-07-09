@@ -49,12 +49,10 @@ class AccountAttribute():
     
                 
     def get_encode_password(self) -> str:
-        """ return password encoded whit a secret key
-                   """
+        """ return password encoded whit a secret key """
         to_encode = f"{self.password}&{JWT_SECRET_KEY}"
         # Warning if to_encode key is changed, the password will be changed 
         #so the user will have to reset the password
- 
         return hashlib.md5(to_encode.encode("utf-8")).hexdigest()
 
     def _format_attribute(self):
@@ -114,10 +112,9 @@ class AccountAttribute():
             key: obj_dict.get(key)
             for key in obj_dict
         }
-        
+
 @dataclass
 class PersonAttribute():
-
     def __init__(self):
         self.account_id:int = None
         self.name:str = None
@@ -183,10 +180,7 @@ class LocationAttribute():
        
 
     def from_dict(self, data: Dict[str, Any]) -> LocationAttribute:
-        """ set attribute from dict,
-            
-        """
-
+        """ set attribute from dict"""
 
         for field in [field for field in data if field in self.__dict__]:
             setattr(self, field, data[field])

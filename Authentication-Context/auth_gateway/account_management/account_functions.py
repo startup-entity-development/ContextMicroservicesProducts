@@ -156,8 +156,7 @@ class AccountFuntions():
                 'external_id':external_id,
                 'is_root':is_root,
                 'iat':datetime.utcnow(),
-                'exp':datetime.utcnow() + timedelta(weeks=20) # TODO: Change to 1 hour in production, I have set it to 20 weeks for develoment time purposes.
-            }
+                }
         
         token = jwt.encode(
             payload,

@@ -44,6 +44,7 @@ def login_auth_root():
         dict: A dictionary containing the token and message if the authentication is successful.
               Otherwise, returns a dictionary with an error message and error code.
     ghp!123
+    
     """
     username, password = check_login_arguments(request)
     if username == USER_AUTH_ROOT:
@@ -65,7 +66,7 @@ def login_auth_root():
         }, 200
     else:
         return {'message':'User name incorrect', 'error_code':104}, 401
-
+    
 @api.post('/login')
 def login():
     username, password = check_login_arguments(request)

@@ -1,0 +1,4 @@
+{
+    "docker.dockerPath": "/snap/bin/docker",
+    "DockerRun.DisableDockerrc": true
+}
